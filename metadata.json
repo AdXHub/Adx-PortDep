@@ -1,0 +1,6 @@
+{
+  "name": "AdX — Anime. Absurdity. Entertainment.",
+  "description": "Official creator portfolio of AdX — anime-focused digital entertainment and creator brand built around laughter, wit, eccentricity, controlled chaos and highly shareable storytelling.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

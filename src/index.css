@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@theme {
+  --color-midnight: #0B0B12;
+  --color-electric-purple: #7C3AED;
+  --color-neon-cyan: #22D3EE;
+  --color-vibrant-yellow: #FACC15;
+  --color-hot-pink: #EC4899;
+
+  --font-display: "Montserrat", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-impact: "Bebas Neue", "Montserrat", sans-serif;
+  --font-body: "Poppins", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Custom Anime / Manga Utilities */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-impact {
+  font-family: var(--font-impact);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+/* Manga Halftone Texture */
+.bg-halftone {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1.5px, transparent 1.5px);
+  background-size: 16px 16px;
+}
+
+.bg-halftone-dense {
+  background-image: radial-gradient(rgba(124, 58, 237, 0.18) 1.2px, transparent 1.2px);
+  background-size: 8px 8px;
+}
+
+.bg-manga-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+}
+
+/* Manga Speed Lines */
+.manga-speed-lines {
+  background: repeating-conic-gradient(
+    from 0deg,
+    rgba(255, 255, 255, 0.03) 0deg 2deg,
+    transparent 2deg 6deg
+  );
+}
+
+/* Comic Panel Border */
+.manga-border {
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 4px 4px 0px rgba(124, 58, 237, 0.6);
+}
+
+.manga-border-cyan {
+  border: 2px solid rgba(34, 211, 238, 0.4);
+  box-shadow: 4px 4px 0px rgba(34, 211, 238, 0.4);
+}
+
+.manga-border-yellow {
+  border: 2px solid #FACC15;
+  box-shadow: 4px 4px 0px #FACC15;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0B12;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7C3AED;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #22D3EE;
+}
+
+/* Custom subtle glitch text */
+@keyframes glitch-anim {
+  0% { transform: translate(0) }
+  20% { transform: translate(-2px, 1px) }
+  40% { transform: translate(-1px, -1px) }
+  60% { transform: translate(2px, 1px) }
+  80% { transform: translate(1px, -1px) }
+  100% { transform: translate(0) }
+}
+
+.animate-glitch {
+  animation: glitch-anim 0.3s ease-in-out infinite alternate;
+}
+
